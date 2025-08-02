@@ -153,6 +153,9 @@ onMounted(async () => {
         <div class="danger">Please Close Edge Browser And Reload Again.</div>
       </div>
     </div>
+    <div style="text-align: right">
+      <a target="_blank" href="https://github.com/cencuansen/edge-autofill-killer">Github</a>
+    </div>
   </main>
 </template>
 
@@ -359,5 +362,15 @@ button {
 /* 滚动条滑块激活状态 */
 ::-webkit-scrollbar-thumb:active {
   background: #6a6a6a; /* 点击时颜色更亮 */
+}
+
+/* Optional: Remove visited link styles */
+a:visited {
+  color: inherit; /* Ensure visited links don't change color */
+}
+
+/* Optional: Remove hover effects */
+a:hover {
+  color: red;
 }
 </style>
